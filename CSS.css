@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    background-color: #F7E3D4;
+}
+
+.container {
+    display: grid;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #4A96ED;
+    margin-top: -22px;
+}
+.link {
+    border: #4A96ED;
+    
+}
+
+#buttonLogin {
+    color: #F7E3D4;
+    background: #B36424;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+#buttonDoar{
+    grid-column: 1 / -1; /* O botão ocupa as duas colunas */
+    justify-self: end; /* Alinha o botão à direita */
+    width: 100px;
+    height: 25px;
+    background-color: #4A96ED;
+    color: #F7E3D4;
+    border-radius: 5px;
+    border: solid #B36424 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+#buttonDoar:hover {
+    background-color: #B36424;
+    border: solid #4A96ED 2px;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #4A96ED;
+    color: #F7E3D4;
+    text-align: center;
+    /*margin-top: 20%;*/
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    gap:20px;
+}
+
+/* Contêiner principal para centralizar o formulário */
+.form-wrapper {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    height: 100vh; /* Altura da tela inteira */
+   /* background-color: #f4f4f4;  Cor de fundo opcional */
+}
+
+#formulario {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna*/
+    grid-template-rows: auto; /* Linhas automáticas */
+    gap: 16px; /* Espaço entre os elementos do formulário */
+    max-width: 500px; /* Ajuste conforme necessário */
+    padding: 20px;
+    border: groove #B36424 4px ;
+    background-color: #ffffff; /* Cor de fundo do formulário*/
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+
+/*Remove os marcadores da lista e acrescenta uma cor de fonte*/
+ul {
+    list-style-type: none;
+    color: #506E6A;
+}
+/*Remove o sublinhado do link, cria um espaço ao redor do conteúdo dentro da borda, além de definir uma cor de fonte e de fundo*/
+a,
+a:link {
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: solid #B36424 3px;
+    color: #F7E3D4;
+    background-color: #B36424;
+}
+
+.opcoesLink {
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid #B36424 3px;
+    display: block;
+    color: #F7E3D4;
+    background-color: #4A96ED;
+    margin: 10px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+/*posiciona o item da lista à esquerda*/
+li {
+    float: left;
+}
+/*Incorpora uma cor de fundo e de fonte quando o ponteiro do mouse passa por cima*/
+a:hover {
+    background-color: #B36424;
+    color: #F7E3D4;
+    border: solid #4A96ED 3px;
+}
+
+
+
+.upload-label {
+    display: block;
+    cursor: pointer;
+}
+
+.upload-image {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    border: solid white 2px;
+
+    grid-column: 1 / -1; /* A imagem ocupa as duas colunas */
+    text-align: center; /* Centraliza a imagem */
+    margin-bottom: 10px; /* Espaço inferior */
+}
+
+/* Estilos para os campos de texto e rótulos */
+label {
+    font-weight: bold;
+    color: #B36424;
+    text-align: right; /* Alinha o texto à direita */
+    padding-right: 10px; /* Espaço entre o label e o campo de texto */
+    align-self: center; /* Centraliza verticalmente em relação ao campo */
+}
+
+input[type="text"], 
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* O input ocupa toda a largura disponível */
+}
+
+/*input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Torna o input invisível */
+/*    cursor: pointer;
+}*/
+/* Botão */
+/*#buttonDoar {
+    grid-column: 1 / -1; /* O botão ocupa as duas colunas */
+/*    justify-self: end; /* Alinha o botão à direita */
+/*    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#buttonDoar:hover {
+    background-color: #45a049;
+}*/

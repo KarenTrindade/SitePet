@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doar Pet</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <header class="container">
+    
+        <h1>Página inicial</h1>
+        <button id="buttonLogin" type="button">Entrar</button>
+        
+    </header>
+    <nav class="container menu">
+
+        <ul>
+            <li><a href="sobresite.html">Sobre o Site</a></li>
+            <li><a href="AdoçãoResponsável.html">Adoção Responsável</a></li>
+            <li><a href="QueroAdotar.html">Quero Adotar</a></li>
+            <li><a href="DoarPet.html">Doar Pet</a></li>
+        </ul>
+    </nav>
+    <div class="form-wrapper">
+        <form id="formulario">
+            <div class="upload-image">
+                <label for="PetImage" class="upload-label">
+                    <img src="img/Carregue1 img.png" alt="Clique para carregar uma imagem" class="upload-image">
+                    <input type="file" id="PetImage" name="PetImage" accept="image/*" required>
+                </label>
+            </div>
+            
+            <div>
+                <label for="NomePet">Nome:</label>
+                <input type="text" id="NomePet" name="NomePet" required>
+            </div>
+            <div>
+                <label for="sobrePet">Sobre o Pet:</label>
+                <textarea id="sobrePet" name="sobrePet" rows="5" cols="40"></textarea>
+            </div>
+            <button id="buttonDoar" type="submit">Doar</button>
+        </form>
+    </div>
+
+    <footer class="container">
+        <table>
+
+            <tr>
+
+                <th>Desenvolvido por...</th>
+
+            </tr>
+
+        </table>
+    </footer>
+</body>
+</html>
