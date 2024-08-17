@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doar Pet</title>
     <link rel="stylesheet" href="CSS.css">
+
 </head>
 <body>
     <header class="container">
@@ -26,7 +27,7 @@
         <form id="formulario">
             <div class="upload-image">
                 <label for="PetImage" class="upload-label">
-                    <img src="img/Carregue1 img.png" alt="Clique para carregar uma imagem" class="upload-image">
+                    <img id="previewImage" src="img/Carregue1 img.png" alt="Clique para carregar uma imagem" class="upload-image">
                     <input type="file" id="PetImage" name="PetImage" accept="image/*" required>
                 </label>
             </div>
@@ -54,5 +55,6 @@
 
         </table>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

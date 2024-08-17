@@ -130,6 +130,24 @@ a:hover {
     cursor: pointer;
 }
 
+.upload-label input[type="file"] {
+    display: none;
+}
+
+.upload-label img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    border: 2px dashed #ccc; /* Adiciona uma borda pontilhada ao redor da imagem */
+    padding: 10px;
+    transition: border-color 0.3s ease; /* Animação suave na cor da borda */
+}
+
+.upload-label img:hover {
+    border-color: #888; /* Muda a cor da borda ao passar o mouse sobre a imagem */
+}
+
+
 .upload-image {
     position: relative;
     display: inline-block;
