@@ -24,7 +24,7 @@ async function loadPets() {
             <h3>${pet.name}</h3>
             <p>${pet.description}</p>
         </div>
-    `).join('');*/
+    `).join('');
     
 
     container.innerHTML = data.map(pet => `
