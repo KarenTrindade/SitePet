@@ -17,13 +17,23 @@ async function loadPets() {
     }
 
     const container = document.getElementById('petsContainer');
+
     container.innerHTML = data.map(pet => `
+        <div class="pet-card">
+            <img src="${supabaseUrl}/storage/v1/object/public/pet-images/public/${pet.image_url}" alt="${pet.name}">
+            <h3>${pet.name}</h3>
+            <p>${pet.description}</p>
+        </div>
+    `).join('');
+    
+
+   /* container.innerHTML = data.map(pet => `
         <div class="pet-card">
             <img src="${pet.image_url}" alt="${pet.name}">
             <h3>${pet.name}</h3>
             <p>${pet.description}</p>
         </div>
-    `).join('');
+    `).join('');*/
 }
 
 // Carregar os dados quando a página for carregada
